@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work C</title>
+<!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="nav-bar">
+        <div class="signature">
+        <img src="sign.png" alt="Your Signature">
+        </div>
+        <div class="nav-text">
+        <p>The myth of visible images</p>
+        </div>  
+    </div>
+    
+  <div class="content">
+    <h2>My Works as Cartographer</h2>
+    <div class="pdf-preview">
+        <div class="switch-button">
+            <button class="btn btn-primary" onclick="switchWork(src='Sources/Carto/Africa.pdf')">Map of Africa</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/Carto/Wisconsin.pdf')">Brouche of Wisconsin</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/Carto/Texas.pdf')">Poverty in Texas</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/Carto/Refine.pdf')">U.S. Primary Petroleum Refineries</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/Carto/Petro.pdf')">U.S. Oil Industry</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/Carto/Info.pdf')">Economy of Massachusetts</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/Carto/Bike.pdf')">2024 UCL Championship Tour of U.S. </button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/Carto/Theme.pdf')">Customization Map for Blade Runner 2049</button>
+          </div>
+          
+        <div class="frame">
+            <iframe id="pdfPreviewA" width="85%" height="600px"></iframe>
+        </div>
+
+  </div>
+  
+  <a class="back-link" href="index.html">Back to Main Page</a>
+</div>
+<script>
+  function switchWork(workFileName) {
+    document.getElementById('pdfPreviewA').src = workFileName;
+  }
+</script>
+</body>
+</html>

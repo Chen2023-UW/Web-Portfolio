@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work C</title>
+<!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="nav-bar">
+        <div class="signature">
+        <img src="sign.png" alt="Your Signature">
+        </div>
+        <div class="nav-text">
+        <p>The myth of visible images</p>
+        </div>  
+    </div>
+    
+  <div class="content">
+    <h2>My Works as GIS Analyst</h2>
+    <div class="pdf-preview">
+        <div class="switch-button">
+            <button class="btn btn-primary" onclick="switchWork(src='Sources/GIS/Construction.pdf')">Landuse Digitialization</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/GIS/EV.pdf')">EV Charging in CT</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/GIS/immi.pdf')">Immigrant to U.S.</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/GIS/trade.pdf')">U.S. Trade Partners</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/GIS/export.pdf')">U.S. Exports</button>
+            <button class="btn btn-primary" onclick="switchWork(src = 'Sources/GIS/indu.pdf')">Industry in Midwest</button>
+          </div>
+          
+        <div class="frame">
+            <iframe id="pdfPreviewA" width="85%" height="600px"></iframe>
+        </div>
+
+  </div>
+  
+  <a class="back-link" href="index.html">Back to Main Page</a>
+</div>
+<script>
+  function switchWork(workFileName) {
+    document.getElementById('pdfPreviewA').src = workFileName;
+  }
+</script>
+</body>
+</html>
