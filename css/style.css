@@ -15,7 +15,7 @@ body {
     padding: 20px;
   }
   
-  /* Main Page styles */
+
   .nav-bar {
     /*background-color: burlywood;*/
     width: 100%;
@@ -97,4 +97,9 @@ body {
 .frame {
     margin-top: 20px;
   }
-  
+
+.custom-facebook-button {
+  color: #422A23;
+  background-color: transparent;
+  border: none;
+}
